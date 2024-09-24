@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="./assets/css/2.css">
+</head>
+<body>
+    <div id="main-content">
+        <header>
+            <img class="logo" src="./assets/imgs/logo.png" alt="logo">
+            <nav>
+               <ul class="nlinks">
+                  <li><a href="s.html">Home</a></li>
+                  <li><a href="1.html">Register</a></li>
+                  <li><a href="login.html">Login</a></li>
+                  <li><a href="d.html">Dashboard</a></li>
+                  <li><a href="2.html">About Us</a></li>
+              </ul>
+            </nav>
+        </header>
+        <main>
+            <div class="user-details">
+                <h1>Exam-Hub Dashboard</h1>
+                <p>Name: zoro</p>
+                <p>Email: zoro@gmail.com</p>
+            </div>
+
+            <div class="exams-container">
+                <div class="exam-box">
+                    <h2>HTML Basics</h2>
+                    <button onclick="startExam('HTML Basics')">Start Exam</button>
+                </div>
+                <div class="exam-box">
+                    <h2>CSS Fundamentals</h2>
+                    <button onclick="startExam('CSS Fundamentals')">Start Exam</button>
+                </div>
+                <div class="exam-box">
+                    <h2>JavaScript Essentials</h2>
+                    <button onclick="startExam('JavaScript Essentials')">Start Exam</button>
+                </div>
+                <div class="exam-box">
+                    <h2>React Basics</h2>
+                    <button onclick="startExam('React Basics')">Start Exam</button>
+                </div>
+                <div class="exam-box">
+                    <h2>Node.js Introduction</h2>
+                    <button onclick="startExam('Node.js Introduction')">Start Exam</button>
+                </div>
+            </div>
+
+            <p class="performance-message">
+               Remember,<br> your performance in exams reflects your understanding and commitment to learning. <br>
+               Cheating undermines your potential and hinders your growth. Strive to do your best and 
+               embrace the journey of improvement!
+           </p>
+        </main>
+    </div>
+    <footer>
+        <p>All rights reserved &copy; Exam Hub.com</p>
+    </footer>
+    <script src="./assets/js/1.js"></script>
+</body>
+</html>
