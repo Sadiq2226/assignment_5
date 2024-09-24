@@ -1,0 +1,173 @@
+/* Reset default browser margins and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(to right,black,rgb(40, 40, 40),black);
+    color: #15c7de;
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+}
+
+/* Header Styling */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1em;
+    background: black;
+    color: #fff;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+header .logo {
+    height: 50px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1em;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1em;
+    padding: 10px;
+}
+
+nav ul li a:hover {
+    color: #ddd;
+}
+
+/* Main Content Section */
+#main-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 120px;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto; 
+    width: 100%;
+    padding: 40px 20px;
+}
+
+.intro-text {
+    flex: 1;
+    color: #fff;
+    padding-right: 20px; 
+}
+
+.intro-text h1 {
+    font-size: 3em;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.intro-text p {
+    font-size: 1.2em;
+    line-height: 1.5;
+}
+
+.intro-image {
+    flex: 1;
+    text-align: right;
+}
+
+.intro-image img {
+    max-width: 400px;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.intro-image img:hover {
+    transform: scale(1.1);
+}
+
+
+.quote-container {
+    width: 100%;
+    text-align: center;
+    background: linear-gradient(to right rgb(2, 69, 2),black,rgb(3, 49, 3));
+    padding: 20px;
+    margin-top: 40px;
+}
+
+.quote {
+    font-size: 1.5em;
+    font-style: italic;
+    color: #fff;
+    font-weight: bold;
+}
+
+/* Footer */
+footer {
+    width: 100%;
+    background: black;
+    text-align: center;
+    padding: 1em;
+}
+
+footer p {
+    color: blanchedalmond;
+    font-size: 20px;
+}
+
+
+@media (max-width: 768px) {
+    #main-content {
+        padding-top: 100px;
+    }
+
+    .content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .intro-text {
+        max-width: 100%;
+        margin-bottom: 20px;
+        text-align: left; 
+    }
+
+    .intro-image {
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .intro-image img {
+        max-width: 80%;
+    }
+}
+
+@media (max-width: 480px) {
+    header .logo {
+        height: 40px;
+    }
+
+    nav ul li a {
+        font-size: 1em;
+        padding: 10px;
+    }
+
+    footer p {
+        font-size: 16px;
+    }
+}
